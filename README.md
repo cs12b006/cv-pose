@@ -17,9 +17,13 @@ The code was developed with Python 3. Dependencies can be installed with
     pip install -r requirements.txt
 
 Generate pickle files for training data paths and joint order match using:
-   ``` python pickle_file.py``` and update the config file ``ownconfig.yaml`` accordingly.
+   ``` python pickle_file.py``` and update the path in the config file ``ownconfig.yaml`` accordingly.
 
 ## Training / Testing
+For running with the baseline (Vunet)
+
+    python main.py --config owndata.yaml --mode test --checkpoint <path to checkpoint of first round>
+For running the proposed model
 
     python main_new.py --config owndata.yaml --mode test --checkpoint <path to checkpoint of first round>
 
